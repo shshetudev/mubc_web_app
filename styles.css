@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.school-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.school-info {
+    text-align: center;
+}
+
+.school-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.school-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .school-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .school-info p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    header {
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .school-info h2 {
+        font-size: 2rem;
+    }
+
+    .school-info p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .school-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .school-info p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}
